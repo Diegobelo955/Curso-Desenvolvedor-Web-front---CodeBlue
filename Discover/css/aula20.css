@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type:none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+h1{
+    font:36px 'comfortaa', cursive;
+    margin: 36px 0;
+    letter-spacing: -1px;
+}
+
+h2{
+    font:900 13px 'Roboto', sans-serif;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+
+
+.legenda{
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.legenda p{
+    font: 700 13px/1 'Roboto',sans-serif;
+
+}
+
+.legenda a{
+    font: 400 11px 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgba(0 , 0, 0, 0.8);
+}
+
+.stories{
+    display: flex;
+}
+
+.stories-box{
+    overflow-x: scroll;
+    margin-bottom: 48px;
+}
+
+.stories section{
+    min-width: 100%;
+    gap: 16px;
+
+}
+
+.posts{
+    display: flex;
+    gap: 9px;
+    
+}
+
+.posts article{
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+}
+
+
+.ver-mais a{
+    display: block;
+    padding: 19px 0 18px;
+    margin: 32px 0 90px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font:900 13px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    
+    border-top: solid 1px #ccc;
+    padding: 9px 0;
+}
+
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9px;
+
+}
