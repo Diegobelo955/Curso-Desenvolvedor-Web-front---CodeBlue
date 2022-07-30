@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./style.css">
         <title>Diego - Projects</title>
     </head>
     <body>
@@ -16,61 +17,72 @@
         
             <div class="container">
             <nav>
-                <div class="text">
+                <a class="text">
                     <p class="principal">Diego</p>
                     <p class="secundario">portfólio site</p>
-                </div>
+                </a>
                 <button class="hamburguer" id="hamburguer">
                     <i class="fa fa-bars"></i>
+                    
+                    
                 </button>
                 <ul class="nav-ul" id="nav-ul">
                     
                     <li><a href="">Home</a></li>
-                    <li><a href="">Sobre Mim</a></li>
+                    
                     <li><a href="">Experiência</a></li>
                     <li><a href="">Cursos/Competências</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="./html/contato.html">Contato</a></li>
                     
-                </ul>      
+                </ul>   
+            </nav>   
         </div>
 
 
     </header>
 
             
-        </nav>
+        
 
 
         <main class="container">
-            <article class="apresentation">
+            <section class="section-one">
+                <article class="apresentation">
                 
-                <figure>
+                <figure class="image">
                     <img src="./images/perfil-resize2.jpeg" alt="Foto de Perfil">
                 </figure>
-                <div>
-                    <h2 class="principal">Quem Sou Eu</h2>
-                    <p>Olá a todos! Meu nome é Diego Belo, morador do Rio de Janeiro, vascaíno, possuo 26 anos e sou estudante de ciência da computação na UFRJ, sou uma pessoa apaixonada por tecnologia, educação e futebol, acredito que a educação consegue transformar o mundo. Meus interesses na tecnologia são : Desenvolvimento Web e Análise de Dados</p>
+
+                <div class="introduce">
+                    <h2 class="principal">Quem Sou Eu: </h2>
+                    <h3>Olá a todos!</h3>
+                    <p> Meu nome é Diego Belo, morador do Rio de Janeiro, vascaíno, possuo 26 anos e sou estudante de ciência da computação na UFRJ. Sou uma pessoa apaixonada por tecnologia, educação e futebol; acredito que a educação consegue transformar o mundo. Meus interesses na tecnologia são : Desenvolvimento Web e Análise de Dados</p>
                 </div>
 
-            </article>
-
-            <article class="content">
-                <article>
-                    <h1>Exercícios</h1>
-
-                    <ul>
+            </section>
             
-                        <li><a href="../Curso-Desenvolvedor-Web-front---CodeBlue/Exercicio-Formulário- aula-21/html/codeblueform.html">Replicação Formulário site CodeBlue</a></li>
-                        <li><a href="../Curso-Desenvolvedor-Web-front---CodeBlue/Perfil/html/perfil.html">Perfil</a></li>
-                        <li><a href="../Curso-Desenvolvedor-Web-front---CodeBlue/Search/html/search.html">Search</a></li>
-                    </ul>
-
-                </article>
-                <article>
-                    <h1>Projetos</h1>
-
-                </article>
             </article>
+
+
+            <section class="section-two">
+                <div class="social-media">
+                    <div class="git">
+                       <a href="https://github.com/Diegobelo955"> <i class="fa fa-github fa-2x" aria-hidden="true" fa-3x></i></a>
+
+
+                    </div>
+                    <div class="linke">
+                        <a href="https://www.linkedin.com/in/diego-belo-4a5b9b107/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                        
+                    </div>
+                    <div class="inst">
+                        <a href="https://www.instagram.com/diego.belo95/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+            
 
 
 
@@ -82,7 +94,7 @@
 
 
 
-        <script src="./script.js"></script>
+        <script src="./script-original.js"></script>
 
     </body>
 </html>
