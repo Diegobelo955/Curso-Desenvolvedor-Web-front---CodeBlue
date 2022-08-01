@@ -160,14 +160,18 @@ body {
   width: 688px;
 }
 
-header {
+.header {
   background: var(--color-dark);
   border-top: solid var(--color-dark);
   border-bottom: solid var(--color-primary);
   width: 100%;
 }
 
-/* MENU */
+.topo-fixo {
+  position: fixed;
+  top: 0;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -199,7 +203,6 @@ nav ul a:hover {
 
 .secundario {
   font: 400 0.7em "Comfortaa", cursive;
-  padding-left: 1.3em;
   text-align: left;
 }
 
@@ -256,19 +259,73 @@ figure {
 }
 
 /* RODAPÉ */
-footer {
+.rodape {
   border-top: solid 1px #000;
   text-align: center;
   padding: 40px 0;
 }
 
-footer p {
+.rodape p {
   font: 200 14px/1 Arial, Helvética, sans-serif;
+}
+
+.formulario {
+  padding: 1.5em;
+}
+
+.formulario h2 {
+  padding-top: 1em;
+  color: var(--color-light-shade);
+}
+
+.campo {
+  color: var(--color-light);
+  padding-top: 2em;
+  display: block;
+}
+
+input[type=text] {
+  border: solid 1px var(--color-light-shade);
+  margin-bottom: 1em;
+}
+
+input[type=text]:focus,
+input[type=submit] {
+  border-color: var(--color-light);
+  color: var(--color-light);
+}
+
+input[type=submit] {
+  color: var(--color-light-shade);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.6;
+}
+
+.li-campo textarea {
+  border: solid 1 px var(--color-light);
+  background: var(--color-light);
+  margin-top: 3em;
+}
+
+.li-campo {
+  margin-bottom: 1em;
+}
+
+.final label {
+  font-size: 1.3em;
+}
+
+fieldset {
+  border: 0;
 }
 
 /* MOBILE */
 @media (max-width: 688px) {
-  p {
+  p, label {
     color: var(--color-light-shade);
     font: 400 0.9em "Comfortaa", cursive;
     line-height: 2.5em;
@@ -283,5 +340,42 @@ footer p {
   }
   .hamburguer {
     display: block;
+  }
+}
+@media (min-width: 689px) and (max-width: 992px) {
+  p, label {
+    color: var(--color-light-shade);
+    font: 400 1em "Comfortaa", cursive;
+    line-height: 2.5em;
+    letter-spacing: 0.06em;
+  }
+  .apresentation img {
+    width: 450px;
+    height: 450px;
+  }
+  .nav-ul {
+    display: flex;
+  }
+  .container {
+    max-width: 88%;
+    max-width: 992px;
+  }
+}
+@media (min-width: 993px) {
+  p, label {
+    color: var(--color-light-shade);
+    font: 400 1.1em "Comfortaa", cursive;
+    line-height: 2.5em;
+    letter-spacing: 0.06em;
+  }
+  .container {
+    width: 1200px;
+  }
+  .nav-ul {
+    display: flex;
+  }
+  .apresentation img {
+    width: 450px;
+    height: 450px;
   }
 }

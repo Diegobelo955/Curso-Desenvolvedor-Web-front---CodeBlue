@@ -11,5 +11,18 @@
     });
 
 
+// Fixar o topo
 
+window.onscroll = function(){myFunction()};
+var header = document.getElementById('myHeader')
+var topoFixo = header.offsetTop;
+
+function myFunction() {
+    if(window.pageYOffset > topoFixo) {
+        header.classList.add('topo-fixo');
+    }
+    else {
+        header.classList.remove('topo-fixo')
+    }
+}
 
